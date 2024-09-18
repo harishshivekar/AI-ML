@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crop Recommendation System</title>
+
+    <!-- Import Google Fonts and Font Awesome -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- Link to external CSS file (styles.css) -->
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
+    <!-- Main Container -->
     <div class="container">
         <h1>Crop Recommendation System</h1>
-        
+
+        <!-- Form Group for Inputs -->
         <div class="form-group">
             <label for="district">District</label>
             <select id="district" name="district"></select>
@@ -50,14 +59,17 @@
             <input type="number" id="temperature" name="temperature" placeholder="Enter Temperature value">
         </div>
 
-        <button id="recommendButton" onclick="recommendCrop()">Recommend Crop</button>
+        <!-- Recommendation Button -->
+        <button id="recommendButton" class="btn" onclick="recommendCrop()">Recommend Crop</button>
 
+        <!-- Results Section -->
         <div id="recommendationResult">
             <h2>Recommended Crop: <span id="recommendedCrop"></span></h2>
             <h2>Recommended Fertilizer: <span id="recommendedFertilizer"></span></h2>
         </div>
     </div>
 
+    <!-- External JS Script -->
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>

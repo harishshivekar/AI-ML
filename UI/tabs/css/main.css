@@ -1,6 +1,16 @@
 /* Importing Poppins Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+:root {
+    --main-bg-color: #f9f4f1;
+    --header-bg-color: #fff;
+    --border-color: #d6bfa5;
+    --primary-color: #a0522d;
+    --secondary-color: #654321;
+    --btn-gradient: linear-gradient(122.33deg, #d2a679 30.62%, #8b4513 100%);
+}
+
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -10,14 +20,14 @@
 
 /* Body and Layout */
 body {
-    background-color: #f9f4f1; /* Soft white background */
+    background-color: var(--main-bg-color); /* Soft white background */
     margin: 0;
 }
 
 /* Header Styling */
 header {
-    background-color: #fff;
-    border-bottom: 1px solid #d6bfa5;
+    background-color: var(--header-bg-color);
+    border-bottom: 1px solid var(--border-color);
     padding: 18px 0;
 }
 
@@ -34,7 +44,7 @@ header {
     display: flex;
     align-items: center;
     font-size: 24px;
-    color: #a0522d;
+    color: var(--primary-color);
 }
 
 nav ul {
@@ -48,7 +58,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #654321; /* Dark brown */
+    color: var(--secondary-color); /* Dark brown */
     font-weight: 600;
     font-size: 16px;
     transition: text-decoration 0.3s ease;
@@ -63,14 +73,9 @@ nav ul li a:hover {
     background-image: url('/UI/Images/wp3471778-john-deere-images-wallpaper.jpg');
     background-size: cover;
     background-position: center;
-<<<<<<< Updated upstream
-    padding: 100px;
-=======
     padding: 100px 0; /* Adjust as per your design */
     color: white;
->>>>>>> Stashed changes
     text-align: center;
-    color: white;
 }
 
 .BG h1, .BG p {
@@ -80,7 +85,7 @@ nav ul li a:hover {
 .BG .btn {
     margin-top: 20px;
     padding: 12px 25px;
-    background: linear-gradient(122.33deg, #d2a679 30.62%, #8b4513 100%);
+    background: var(--btn-gradient);
     color: white;
     border-radius: 30px;
     font-size: 18px;
@@ -104,7 +109,7 @@ nav ul li a:hover {
 .services h2 {
     text-align: center;
     font-size: 28px;
-    color: #654321;
+    color: var(--secondary-color);
     margin-bottom: 30px;
 }
 
@@ -117,7 +122,7 @@ nav ul li a:hover {
 
 .card {
     background-color: #fff;
-    border: 1px solid #d6bfa5;
+    border: 1px solid var(--border-color);
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -134,13 +139,13 @@ nav ul li a:hover {
 
 .icon {
     font-size: 40px;
-    color: #a0522d;
+    color: var(--primary-color);
     margin-bottom: 10px;
 }
 
 .card h3 {
     font-size: 22px;
-    color: #654321;
+    color: var(--secondary-color);
     margin-bottom: 10px;
 }
 
@@ -151,8 +156,8 @@ nav ul li a:hover {
 
 /* Footer Styling */
 footer {
-    background-color: #fff;
-    border-top: 1px solid #d6bfa5;
+    background-color: var(--header-bg-color);
+    border-top: 1px solid var(--border-color);
     padding: 20px 0;
     text-align: center;
 }
@@ -169,20 +174,19 @@ footer {
 
 .social-media a {
     text-decoration: none;
-    color: #a0522d;
+    color: var(--primary-color);
     font-size: 20px;
     margin: 0 10px;
-<<<<<<< Updated upstream
     transition: color 0.3s ease;
 }
 
 .social-media a:hover {
-    color: #654321;
+    color: var(--secondary-color);
 }
 
 /* Contact Us Section */
 #contact-us {
-    background-color: #f9f4f1;
+    background-color: var(--main-bg-color);
     padding: 50px 20px;
     display: flex;
     justify-content: center;
@@ -201,18 +205,18 @@ footer {
 .branding {
     flex-basis: 30%;
     padding-right: 30px;
-    border-right: 2px solid #d6bfa5;
+    border-right: 2px solid var(--border-color);
 }
 
 .branding h2 {
-    color: #a0522d;
+    color: var(--primary-color);
     font-size: 32px;
     margin-bottom: 10px;
 }
 
 .branding p {
     font-size: 16px;
-    color: #654321;
+    color: var(--secondary-color);
 }
 
 .contact-form {
@@ -222,7 +226,7 @@ footer {
 
 .contact-form h2 {
     font-size: 28px;
-    color: #654321;
+    color: var(--secondary-color);
     margin-bottom: 20px;
 }
 
@@ -233,6 +237,7 @@ footer {
 
 .input-group {
     display: flex;
+    flex-direction: column; /* Stack vertically on small screens */
     gap: 20px;
 }
 
@@ -240,9 +245,9 @@ footer {
 .contact-form textarea {
     padding: 15px;
     font-size: 16px;
-    border: 1px solid #d6bfa5;
+    border: 1px solid var(--border-color);
     border-radius: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Adjust margin for better spacing */
     width: 100%;
     outline: none;
 }
@@ -255,7 +260,7 @@ footer {
     color: #fff;
     border-radius: 30px;
     padding: 10px 15px;
-    background: linear-gradient(122.33deg, #d2a679 30.62%, #8b4513 100%);
+    background: var(--btn-gradient);
     font-size: 16px;
     transition: transform 0.3s ease;
 }
@@ -263,14 +268,43 @@ footer {
 .btn:hover {
     transform: translateY(-2px);
 }
+
 .branding-img {
     margin-top: 2px;
-    width: 400px; /* Adjust size as needed */
-    height: 380px; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto; /* Maintain aspect ratio */
     display: block; /* Align as block element */
     border-radius: 8px; /* Optional: Round the corners */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a small shadow */
 }
-=======
+
+/* About Us Section */
+#about-us {
+    background-color: var(--header-bg-color);
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
 }
->>>>>>> Stashed changes
+
+.about-container {
+    max-width: 1200px;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+#about-us h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+#about-us p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #4b4b4b;
+}
+
+#about-us p:last-child {
+    margin-bottom: 0;
+}
