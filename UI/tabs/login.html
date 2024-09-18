@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="./css/stylelogin.css">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <title>Login</title>
+</head>
+
+<body>
+    <!-- Background Animation -->
+    <div class="background-animation"></div>
+
+    <!-- Container for Login Form -->
+    <div class="container">
+        <div class="login-wrapper">
+            <div class="login-text">
+                <!-- Logo -->
+                <div class="logo">
+                    <span><i class="fas fa-seedling"></i></span>
+                    <span>4FARMERS</span>
+                </div>
+
+                <h1>Log In</h1>
+                <p>Welcome back! Please log in to continue.</p>
+
+                <form class="flex-c">
+                    <!-- E-mail / Phone -->
+                    <div class="input-box">
+                        <span class="label">E-mail / Phone </span>
+                        <div class="flex-r input">
+                            <input type="text" placeholder="name@abc.com">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                    </div>
+
+                    <!-- Password -->
+                    <div class="input-box">
+                        <span class="label">Password</span>
+                        <div class="flex-r input">
+                            <input type="password" placeholder="Enter your password">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                    </div>
+
+                    <!-- Remember Me Checkbox -->
+                    <div class="check">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <a href="127.0.0.1:5000">
+                    <input class="btn" type="submit" value="Log In" 
+                    ></a>
+
+                    <!-- Extra Link (Sign Up) -->
+                    <span class="extra-line">
+                        <span>Don’t have an account?</span>
+                        <a href="/UI/tabs/signup.html">Sign Up</a>
+                    </span>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

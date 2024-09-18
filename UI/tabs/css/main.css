@@ -1,0 +1,171 @@
+/* Importing Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body and Layout */
+body {
+    background-color: #f9f4f1; /* Soft white background */
+    margin: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #d6bfa5;
+    padding: 18px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 12001px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #a0522d;
+}
+
+.logo span, .logo span i {
+    font-size: 24px;
+    color: #a0522d;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #654321; /* Dark brown */
+    font-weight: 600;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Section */
+.BG {
+    background-image: url('/UI/Images/wp3471778-john-deere-images-wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px ; /* Adjust as per your design */
+    color: white;
+    text-align: center;
+}
+
+.BG h1, .BG p {
+    margin: 0;
+    padding: 66px 0;
+}
+
+.BG .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.BG .btn {
+    color: #fff;
+    border-radius: 30px;
+    padding: 12px 25px;
+    background: linear-gradient(122.33deg, #d2a679 30.62%, #8b4513 100%);
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.BG .btn:hover {
+    transform: translateY(-3px);
+}
+
+/* Services Section */
+.services {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #654321;
+    margin-bottom: 30px;
+}
+
+.service-box {
+    background-color: #fff;
+    border: 1px solid #d6bfa5;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service-box i {
+    font-size: 40px;
+    color: #a0522d;
+    margin-bottom: 10px;
+}
+
+.service-box h3 {
+    font-size: 22px;
+    color: #654321;
+    margin-bottom: 10px;
+}
+
+.service-box p {
+    font-size: 16px;
+    color: #4b4b4b;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #fff;
+    border-top: 1px solid #d6bfa5;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #a0522d;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.social-media a:hover {
+    color: #654321;
+}

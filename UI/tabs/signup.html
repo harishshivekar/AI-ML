@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="./css/stylesignup.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <title>Sign Up - 4FARMERS</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-wrapper">
+            <div class="login-text">
+                <!-- Logo for Farmer Theme -->
+                <div class="logo">
+                    <span><i class="fas fa-seedling"></i></span> <!-- Seedling for farmer theme -->
+                    <span>4FARMERS</span>
+                </div>
+
+                <h1>Sign Up</h1>
+                <p>Begin your farming journey with us today!</p>
+
+                <form class="flex-c">
+                    <!-- Name Fields in Single Row -->
+                    <div class="name-box flex-r">
+                        <!-- First Name -->
+                        <div class="input-box half-width">
+                            <span class="label">First Name</span>
+                            <div class="flex-r input">
+                                <input type="text" placeholder="First Name" required>
+                                <i class="fas fa-user"></i> <!-- User icon -->
+                            </div>
+                        </div>
+
+                        <!-- Last Name -->
+                        <div class="input-box half-width">
+                            <span class="label">Last Name</span>
+                            <div class="flex-r input">
+                                <input type="text" placeholder="Last Name" required>
+                                <i class="fas fa-user"></i> <!-- User icon -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- E-mail / Phone -->
+                    <div class="input-box">
+                        <span class="label">E-mail / Phone</span>
+                        <div class="flex-r input">
+                            <input type="text" placeholder="name@abc.com" required>
+                            <i class="fas fa-envelope"></i> <!-- Envelope icon -->
+                        </div>
+                    </div>
+
+                    <!-- Password -->
+                    <div class="input-box">
+                        <span class="label">Password</span>
+                        <div class="flex-r input">
+                            <input type="password" placeholder="8+ characters (a, A, 1, #)" required>
+                            <i class="fas fa-lock"></i> <!-- Lock icon -->
+                        </div>
+                    </div>
+
+                    <!-- T&C Checkbox -->
+                    <div class="check">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">I've read and agree with the T&C</label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <input class="btn" type="submit" value="Create an Account">
+
+                    <!-- Already have an account? -->
+                    <span class="extra-line">
+                        <span>Already have an account?</span>
+                        <a href="/UI/tabs/login.html">Sign In</a>
+                    </span>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

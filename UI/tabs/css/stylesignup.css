@@ -1,0 +1,188 @@
+/* Importing Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Flexbox Layouts */
+.flex-r, .flex-c {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.flex-c {
+    flex-direction: column;
+}
+
+.flex-r {
+    flex-direction: row;
+}
+
+/* Body Styling */
+body {
+    background-color: #f9f4f1; /* Soft white background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container Styling - Centering the form */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 100vh; /* Ensures full-height centering */
+    padding: 40px 20px;
+    background-color: #f9f4f1;
+}
+
+/* Login Form Wrapper */
+.login-wrapper {
+    background-color: #fff;
+    max-width: 500px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); /* Slightly more prominent shadow */
+}
+
+/* Logo Styling */
+.logo {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.logo span, .logo span i {
+    font-size: 40px;
+    color: #a0522d; /* Dark brown color */
+}
+
+/* Heading and Subtext */
+.login-text h1 {
+    font-size: 28px;
+    color: #654321; /* Dark brown */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.login-text p {
+    font-size: 18px;
+    color: #4b4b4b; /* Light grey for subtext */
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Form Styling */
+form {
+    width: 100%;
+}
+
+/* Input Box Styling */
+.input-box {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.half-width {
+    width: 48%;
+    margin-right: 4%;
+}
+
+.half-width:last-child {
+    margin-right: 0;
+}
+
+.label {
+    font-size: 16px;
+    color: #4b4b4b;
+    margin-bottom: 5px;
+}
+
+.input {
+    background-color: #f5f0eb;
+    padding: 0 10px;
+    border: 1px solid #d6bfa5;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.input input {
+    border: none;
+    outline: none;
+    padding: 12px 0;
+    background-color: #f5f0eb;
+    flex: 1;
+}
+
+.input i {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+/* Name Fields in a Row */
+.name-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Checkbox Styling */
+.check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.check input {
+    margin-right: 10px;
+}
+
+.check label {
+    color: #4b4b4b;
+    font-size: 14px;
+}
+
+/* Button Styling */
+.btn {
+    color: #fff;
+    border-radius: 30px;
+    padding: 12px 20px;
+    background: linear-gradient(122.33deg, #d2a679 30.62%, #8b4513 100%);
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+/* Extra Line (Sign-In Link) */
+.extra-line {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.extra-line a {
+    color: #8b4513;
+    text-decoration: none;
+}
+
+.extra-line a:hover {
+    text-decoration: underline;
+}

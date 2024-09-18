@@ -1,0 +1,189 @@
+/* Import Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Flexbox Layout */
+.flex-r, .flex-c {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.flex-c {
+    flex-direction: column;
+}
+
+.flex-r {
+    flex-direction: row;
+}
+
+/* Background Animation */
+.background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #ffecd2);
+    background-size: 400% 400%;
+    animation: gradient-animation 10s ease infinite;
+}
+
+/* Keyframes for gradient animation */
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Container Styling */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px 10px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login Form Wrapper */
+.login-wrapper {
+    background-color: #fff; /* White background for the form */
+    max-width: 400px;
+    min-height: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: relative;
+    z-index: 1;
+}
+
+/* Logo Styling */
+.logo {
+    margin-bottom: 20px;
+}
+
+.logo span, .logo span i {
+    font-size: 30px;
+    color: #a0522d; /* Dark brown color */
+}
+
+/* Heading and Subtext */
+.login-text h1 {
+    font-size: 26px;
+    color: #654321; /* Dark brown */
+    margin-bottom: 10px;
+}
+
+.login-text p {
+    font-size: 16px;
+    color: #4b4b4b; /* Light grey for subtext */
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* Input Box Styling */
+.input-box {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.label {
+    font-size: 14px;
+    color: #4b4b4b;
+    margin-bottom: 5px;
+}
+
+.input {
+    background-color: #f5f0eb; /* Light brown for input background */
+    padding: 0 10px;
+    border: 1px solid #d6bfa5; /* Border color matching brown theme */
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.input input {
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    background-color: #f5f0eb;
+    flex: 1;
+}
+
+.input i {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+/* Checkbox Styling */
+.check {
+    margin-bottom: 15px;
+}
+
+.check input {
+    margin-right: 10px;
+}
+
+.check label {
+    font-size: 14px;
+    color: #4b4b4b;
+}
+
+/* Button Styling */
+.btn {
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 15px;
+    background: linear-gradient(122.33deg, #d2a679 30.62%, #8b4513 100%); /* Brown gradient */
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Extra Line (Sign-Up Link) */
+.extra-line {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.extra-line a {
+    color: #8b4513; /* Brown for link */
+    text-decoration: none;
+}
+
+.extra-line a:hover {
+    text-decoration: underline;
+}
+
+/* Icon Styling */
+.icon {
+    background-image: url('4Farmers/blob/main/UI/icons/poultry.png'); /* Ensure path is correct */
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-size: cover;
+}
