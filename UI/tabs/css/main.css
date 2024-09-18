@@ -25,7 +25,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 12001px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -33,11 +33,6 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    font-size: 24px;
-    color: #a0522d;
-}
-
-.logo span, .logo span i {
     font-size: 24px;
     color: #a0522d;
 }
@@ -56,6 +51,7 @@ nav ul li a {
     color: #654321; /* Dark brown */
     font-weight: 600;
     font-size: 16px;
+    transition: text-decoration 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -67,34 +63,26 @@ nav ul li a:hover {
     background-image: url('/UI/Images/wp3471778-john-deere-images-wallpaper.jpg');
     background-size: cover;
     background-position: center;
-    padding: 100px ; /* Adjust as per your design */
-    color: white;
+    padding: 100px;
     text-align: center;
+    color: white;
 }
 
 .BG h1, .BG p {
-    margin: 0;
     padding: 66px 0;
 }
 
 .BG .btn {
     margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.BG .btn {
-    color: #fff;
-    border-radius: 30px;
     padding: 12px 25px;
     background: linear-gradient(122.33deg, #d2a679 30.62%, #8b4513 100%);
+    color: white;
+    border-radius: 30px;
     font-size: 18px;
     font-weight: 600;
     text-decoration: none;
     display: inline-block;
+    transition: transform 0.3s ease;
 }
 
 .BG .btn:hover {
@@ -164,8 +152,101 @@ footer {
     color: #a0522d;
     font-size: 20px;
     margin: 0 10px;
+    transition: color 0.3s ease;
 }
 
 .social-media a:hover {
     color: #654321;
+}
+
+/* Contact Us Section */
+#contact-us {
+    background-color: #f9f4f1;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.branding {
+    flex-basis: 30%;
+    padding-right: 30px;
+    border-right: 2px solid #d6bfa5;
+}
+
+.branding h2 {
+    color: #a0522d;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.branding p {
+    font-size: 16px;
+    color: #654321;
+}
+
+.contact-form {
+    flex-basis: 70%;
+    padding-left: 30px;
+}
+
+.contact-form h2 {
+    font-size: 28px;
+    color: #654321;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #d6bfa5;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.btn {
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 15px;
+    background: linear-gradient(122.33deg, #d2a679 30.62%, #8b4513 100%);
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+.branding-img {
+    margin-top: 2px;
+    width: 400px; /* Adjust size as needed */
+    height: 380px; /* Maintain aspect ratio */
+    display: block; /* Align as block element */
+    border-radius: 8px; /* Optional: Round the corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a small shadow */
 }
