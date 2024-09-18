@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Recommendation System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Crop Recommendation System</h1>
+        
+        <div class="form-group">
+            <label for="district">District</label>
+            <select id="district" name="district"></select>
+        </div>
+
+        <div class="form-group">
+            <label for="soilColor">Soil Color</label>
+            <select id="soilColor" name="soilColor"></select>
+        </div>
+
+        <div class="form-group">
+            <label for="nitrogen">Nitrogen</label>
+            <input type="number" id="nitrogen" name="nitrogen" placeholder="Enter Nitrogen value">
+        </div>
+
+        <div class="form-group">
+            <label for="phosphorus">Phosphorus</label>
+            <input type="number" id="phosphorus" name="phosphorus" placeholder="Enter Phosphorus value">
+        </div>
+
+        <div class="form-group">
+            <label for="potassium">Potassium</label>
+            <input type="number" id="potassium" name="potassium" placeholder="Enter Potassium value">
+        </div>
+
+        <div class="form-group">
+            <label for="ph">pH</label>
+            <input type="number" id="ph" name="ph" placeholder="Enter pH value">
+        </div>
+
+        <div class="form-group">
+            <label for="rainfall">Rainfall</label>
+            <input type="number" id="rainfall" name="rainfall" placeholder="Enter Rainfall value">
+        </div>
+
+        <div class="form-group">
+            <label for="temperature">Temperature</label>
+            <input type="number" id="temperature" name="temperature" placeholder="Enter Temperature value">
+        </div>
+
+        <button id="recommendButton" onclick="recommendCrop()">Recommend Crop</button>
+
+        <div id="recommendationResult">
+            <h2>Recommended Crop: <span id="recommendedCrop"></span></h2>
+            <h2>Recommended Fertilizer: <span id="recommendedFertilizer"></span></h2>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
