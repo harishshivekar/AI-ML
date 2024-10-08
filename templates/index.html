@@ -4,60 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crop Recommendation System</title>
+
+    <!-- Import Google Fonts and Font Awesome -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- Link to external CSS file (styles.css) -->
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <div class="container">
+    <!-- Header Section for the Title -->
+    <header class="page-header">
         <h1>Crop Recommendation System</h1>
-        
-        <div class="form-group">
-            <label for="district">District</label>
-            <select id="district" name="district"></select>
-        </div>
+    </header>
 
-        <div class="form-group">
-            <label for="soilColor">Soil Color</label>
-            <select id="soilColor" name="soilColor"></select>
-        </div>
+    <!-- Main Container -->
+    <div class="container">
+        <div class="login-wrapper">
+            <!-- Form Group for Inputs -->
+            <div class="form-group">
+                <label for="district">District</label>
+                <select id="district" name="district"></select>
+            </div>
 
-        <div class="form-group">
-            <label for="nitrogen">Nitrogen</label>
-            <input type="number" id="nitrogen" name="nitrogen" placeholder="Enter Nitrogen value">
-        </div>
+            <div class="form-group">
+                <label for="soilColor">Soil Color</label>
+                <select id="soilColor" name="soilColor"></select>
+            </div>
 
-        <div class="form-group">
-            <label for="phosphorus">Phosphorus</label>
-            <input type="number" id="phosphorus" name="phosphorus" placeholder="Enter Phosphorus value">
-        </div>
+            <div class="form-group">
+                <label for="nitrogen">Nitrogen</label>
+                <input type="number" id="nitrogen" name="nitrogen" placeholder="Enter Nitrogen value">
+            </div>
 
-        <div class="form-group">
-            <label for="potassium">Potassium</label>
-            <input type="number" id="potassium" name="potassium" placeholder="Enter Potassium value">
-        </div>
+            <div class="form-group">
+                <label for="phosphorus">Phosphorus</label>
+                <input type="number" id="phosphorus" name="phosphorus" placeholder="Enter Phosphorus value">
+            </div>
 
-        <div class="form-group">
-            <label for="ph">pH</label>
-            <input type="number" id="ph" name="ph" placeholder="Enter pH value">
-        </div>
+            <div class="form-group">
+                <label for="potassium">Potassium</label>
+                <input type="number" id="potassium" name="potassium" placeholder="Enter Potassium value">
+            </div>
 
-        <div class="form-group">
-            <label for="rainfall">Rainfall</label>
-            <input type="number" id="rainfall" name="rainfall" placeholder="Enter Rainfall value">
-        </div>
+            <div class="form-group">
+                <label for="ph">pH</label>
+                <input type="number" id="ph" name="ph" placeholder="Enter pH value">
+            </div>
 
-        <div class="form-group">
-            <label for="temperature">Temperature</label>
-            <input type="number" id="temperature" name="temperature" placeholder="Enter Temperature value">
-        </div>
+            <div class="form-group">
+                <label for="rainfall">Rainfall</label>
+                <input type="number" id="rainfall" name="rainfall" placeholder="Enter Rainfall value">
+            </div>
 
-        <button id="recommendButton" onclick="recommendCrop()">Recommend Crop</button>
+            <div class="form-group">
+                <label for="temperature">Temperature</label>
+                <input type="number" id="temperature" name="temperature" placeholder="Enter Temperature value">
+            </div>
 
-        <div id="recommendationResult">
-            <h2>Recommended Crop: <span id="recommendedCrop"></span></h2>
-            <h2>Recommended Fertilizer: <span id="recommendedFertilizer"></span></h2>
+            <!-- Recommendation Button -->
+            <button id="recommendButton" class="btn" onclick="recommendCrop()">Recommend Crop</button>
+
+            <!-- Results Section -->
+            <div id="recommendationResult">
+                <h2>Recommended Crop: <span id="recommendedCrop"></span></h2>
+                <h2>Recommended Fertilizer: <span id="recommendedFertilizer"></span></h2>
+            </div>
         </div>
     </div>
 
+    <!-- External JS Script -->
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
